@@ -45,7 +45,7 @@ namespace ADSProject.Controllers
             }
         }
         [HttpPut("actualizarProfesor/{idProfesor}")]
-        public ActionResult<string> ActualizarCarrera(int idProfesor, [FromBody] Profesor profesor)
+        public ActionResult<string> ActualizarProfesor(int idProfesor, [FromBody] Profesor profesor)
         {
             try
             {
@@ -107,7 +107,7 @@ namespace ADSProject.Controllers
                 else
                 {
                     pCodRespuesta = COD_ERROR;
-                    pMensajeUsuario = "No se encontraron datos de la carrera";
+                    pMensajeUsuario = "No se encontraron datos del prefesor";
                     pMensajeTecnico = pCodRespuesta + " || " + pMensajeUsuario;
                     return NotFound(new { pCodRespuesta, pMensajeUsuario, pMensajeTecnico });
                 }
