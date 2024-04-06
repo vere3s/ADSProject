@@ -1,6 +1,6 @@
-﻿
-using ADSProject.Interfaces;
+﻿using ADSProject.Interfaces;
 using ADSProject.Models;
+using ADSProject.Utils;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ADSProject.Controllers
@@ -9,8 +9,8 @@ namespace ADSProject.Controllers
     public class EstudiantesController : ControllerBase
     {
         private readonly IEstudiante estudiante;
-        private const string COD_EXITO = "000000";
-        private const string COD_ERROR = "999999";
+        private const string COD_EXITO = Constants.COD_EXITO;
+        private const string COD_ERROR = Constants.COD_ERROR;
         private string pCodRespuesta;
         private string pMensajeUsuario;
         private string pMensajeTecnico;

@@ -434,11 +434,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\verri\\source\\repos\\ADSProject\\ADSProject\\ADSProject.csproj",
+      "projectUniqueName": "C:\\Users\\verri\\Documents\\Archivos Salma\\2024\\Materias ciclo 7\\ANALISIS DE SISTEMAS\\LABORATORIO\\TAREA\\ADSProject\\ADSProject\\ADSProject.csproj",
       "projectName": "ADSProject",
-      "projectPath": "C:\\Users\\verri\\source\\repos\\ADSProject\\ADSProject\\ADSProject.csproj",
+      "projectPath": "C:\\Users\\verri\\Documents\\Archivos Salma\\2024\\Materias ciclo 7\\ANALISIS DE SISTEMAS\\LABORATORIO\\TAREA\\ADSProject\\ADSProject\\ADSProject.csproj",
       "packagesPath": "C:\\Users\\verri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\verri\\source\\repos\\ADSProject\\ADSProject\\obj\\",
+      "outputPath": "C:\\Users\\verri\\Documents\\Archivos Salma\\2024\\Materias ciclo 7\\ANALISIS DE SISTEMAS\\LABORATORIO\\TAREA\\ADSProject\\ADSProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

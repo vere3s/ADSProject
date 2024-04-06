@@ -5,26 +5,26 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ADSProject.Controllers
 {
-    [Route("api/carreras/")]
-    public class CarrerasController : ControllerBase
+    [Route("api/profesores/")]
+    public class ProfesoresController : ControllerBase
     {
-        private readonly ICarrera carrera;
+        private readonly IProfesor profesor;
         private const string COD_EXITO = Constants.COD_EXITO;
         private const string COD_ERROR = Constants.COD_ERROR;
         private string pCodRespuesta;
         private string pMensajeUsuario;
         private string pMensajeTecnico;
 
-        public CarrerasController(ICarrera carrera)
+        public ProfesoresController(IProfesor profesor)
         {
-            this.carrera = carrera;
+            this.profesor = profesor;
         }
-        [HttpPost("agregarCarrera")]
-        public ActionResult<string> AgregarCarrera([FromBody] Carrera carrera)
+        [HttpPost("agregarProfesor")]
+        public ActionResult<string> AgregarProfesor([FromBody] Profesor profesor)
         {
             try
             {
-                int contador = this.carrera.AgregarCarrera(carrera);
+                int contador = this.profesor.AgregarProfesor(profesor);
                 if (contador > 0)
                 {
                     pCodRespuesta = COD_EXITO;
@@ -44,12 +44,12 @@ namespace ADSProject.Controllers
                 throw;
             }
         }
-        [HttpPut("actualizarCarrera/{id}")]
-        public ActionResult<string> ActualizarCarrera(int id, [FromBody] Carrera carrera)
+        [HttpPut("actualizarProfesor/{idProfesor}")]
+        public ActionResult<string> ActualizarCarrera(int idProfesor, [FromBody] Profesor profesor)
         {
             try
             {
-                int contador = this.carrera.ActualizarCarrera(id, carrera);
+                int contador = this.profesor.ActualizarProfesor(idProfesor, profesor);
                 if (contador > 0)
                 {
                     pCodRespuesta = COD_EXITO;
@@ -69,12 +69,12 @@ namespace ADSProject.Controllers
                 throw;
             }
         }
-        [HttpDelete("eliminarCarrera/{id}")]
-        public ActionResult<string> EliminarCarrera(int id)
+        [HttpDelete("eliminarProfesor/{idProfesor}")]
+        public ActionResult<string> EliminarProfesor(int idProfesor)
         {
             try
             {
-                bool eliminado = this.carrera.EliminarCarrera(id);
+                bool eliminado = this.profesor.EliminarProfesor(idProfesor);
                 if (eliminado)
                 {
                     pCodRespuesta = COD_EXITO;
@@ -94,15 +94,15 @@ namespace ADSProject.Controllers
                 throw;
             }
         }
-        [HttpGet("obtenerCarreraPorID/{id}")]
-        public ActionResult<string> ObtenerCarrera(int id)
+        [HttpGet("obtenerProfesorPorID/{idProfesor}")]
+        public ActionResult<string> ObtenerProfesor(int idProfesor)
         {
             try
             {
-                Carrera carrera = this.carrera.ObtenerCarreraPorID(id);
-                if (carrera != null)
+                Profesor profesor = this.profesor.ObtenerProfesorPorID(idProfesor);
+                if (profesor != null)
                 {
-                    return Ok(carrera);
+                    return Ok(profesor);
                 }
                 else
                 {
@@ -117,13 +117,13 @@ namespace ADSProject.Controllers
                 throw;
             }
         }
-        [HttpGet("obtenerCarreras")]
-        public ActionResult<List<Carrera>> ObtenerCarreras()
+        [HttpGet("obtenerProfesores")]
+        public ActionResult<List<Profesor>> ObtenerProfesor()
         {
             try
             {
-                List<Carrera> lstCarreras = this.carrera.ObtenerTodasLasCarreras();
-                return Ok(lstCarreras);
+                List<Profesor> lstProfesores = this.profesor.ObtenerTodosLosProfesores();
+                return Ok(lstProfesores);
             }
             catch (Exception)
             {

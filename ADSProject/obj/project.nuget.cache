@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wAsx5vC/BjJN1f4GyUXuyoYqVUJIaEUMf3g64TUwq12NURHXLZ7JyeZMBKZQnOYHnaUWvwjESFh75aE9YZkBwQ==",
+  "dgSpecHash": "u2yAk4BbxDlclLYXBWaWygFTLVf6VkXxSducsCD6nhc5zpOUOC3pOC7FAh6AzXgAXtkm6iHDHFHzsxGDtUQDmw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\verri\\source\\repos\\ADSProject\\ADSProject\\ADSProject.csproj",
+  "projectFilePath": "C:\\Users\\verri\\Documents\\Archivos Salma\\2024\\Materias ciclo 7\\ANALISIS DE SISTEMAS\\LABORATORIO\\TAREA\\ADSProject\\ADSProject\\ADSProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\verri\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\verri\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
