@@ -30,3 +30,36 @@ C:\Users\verri\source\repos\ADSProject\ADSProject\obj\Debug\net8.0\refint\ADSPro
 C:\Users\verri\source\repos\ADSProject\ADSProject\obj\Debug\net8.0\ADSProject.pdb
 C:\Users\verri\source\repos\ADSProject\ADSProject\obj\Debug\net8.0\ADSProject.genruntimeconfig.cache
 C:\Users\verri\source\repos\ADSProject\ADSProject\obj\Debug\net8.0\ref\ADSProject.dll
+C:\Users\verri\Documents\Archivos Salma\2024\Materias ciclo 7\ANALISIS DE SISTEMAS\LABORATORIO\TAREA\ADSProject\ADSProject\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\verri\Documents\Archivos Salma\2024\Materias ciclo 7\ANALISIS DE SISTEMAS\LABORATORIO\TAREA\ADSProject\ADSProject\bin\Debug\net8.0\appsettings.json
+C:\Users\verri\Documents\Archivos Salma\2024\Materias ciclo 7\ANALISIS DE SISTEMAS\LABORATORIO\TAREA\ADSProject\ADSProject\bin\Debug\net8.0\ADSProject.exe
+C:\Users\verri\Documents\Archivos Salma\2024\Materias ciclo 7\ANALISIS DE SISTEMAS\LABORATORIO\TAREA\ADSProject\ADSProject\bin\Debug\net8.0\ADSProject.deps.json
+C:\Users\verri\Documents\Archivos Salma\2024\Materias ciclo 7\ANALISIS DE SISTEMAS\LABORATORIO\TAREA\ADSProject\ADSProject\bin\Debug\net8.0\ADSProject.runtimeconfig.json
+C:\Users\verri\Documents\Archivos Salma\2024\Materias ciclo 7\ANALISIS DE SISTEMAS\LABORATORIO\TAREA\ADSProject\ADSProject\bin\Debug\net8.0\ADSProject.dll
+C:\Users\verri\Documents\Archivos Salma\2024\Materias ciclo 7\ANALISIS DE SISTEMAS\LABORATORIO\TAREA\ADSProject\ADSProject\bin\Debug\net8.0\ADSProject.pdb
+C:\Users\verri\Documents\Archivos Salma\2024\Materias ciclo 7\ANALISIS DE SISTEMAS\LABORATORIO\TAREA\ADSProject\ADSProject\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\verri\Documents\Archivos Salma\2024\Materias ciclo 7\ANALISIS DE SISTEMAS\LABORATORIO\TAREA\ADSProject\ADSProject\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\verri\Documents\Archivos Salma\2024\Materias ciclo 7\ANALISIS DE SISTEMAS\LABORATORIO\TAREA\ADSProject\ADSProject\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\verri\Documents\Archivos Salma\2024\Materias ciclo 7\ANALISIS DE SISTEMAS\LABORATORIO\TAREA\ADSProject\ADSProject\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\verri\Documents\Archivos Salma\2024\Materias ciclo 7\ANALISIS DE SISTEMAS\LABORATORIO\TAREA\ADSProject\ADSProject\obj\Debug\net8.0\ADSProject.csproj.AssemblyReference.cache
+C:\Users\verri\Documents\Archivos Salma\2024\Materias ciclo 7\ANALISIS DE SISTEMAS\LABORATORIO\TAREA\ADSProject\ADSProject\obj\Debug\net8.0\ADSProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\verri\Documents\Archivos Salma\2024\Materias ciclo 7\ANALISIS DE SISTEMAS\LABORATORIO\TAREA\ADSProject\ADSProject\obj\Debug\net8.0\ADSProject.AssemblyInfoInputs.cache
+C:\Users\verri\Documents\Archivos Salma\2024\Materias ciclo 7\ANALISIS DE SISTEMAS\LABORATORIO\TAREA\ADSProject\ADSProject\obj\Debug\net8.0\ADSProject.AssemblyInfo.cs
+C:\Users\verri\Documents\Archivos Salma\2024\Materias ciclo 7\ANALISIS DE SISTEMAS\LABORATORIO\TAREA\ADSProject\ADSProject\obj\Debug\net8.0\ADSProject.csproj.CoreCompileInputs.cache
+C:\Users\verri\Documents\Archivos Salma\2024\Materias ciclo 7\ANALISIS DE SISTEMAS\LABORATORIO\TAREA\ADSProject\ADSProject\obj\Debug\net8.0\ADSProject.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\verri\Documents\Archivos Salma\2024\Materias ciclo 7\ANALISIS DE SISTEMAS\LABORATORIO\TAREA\ADSProject\ADSProject\obj\Debug\net8.0\ADSProject.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\verri\Documents\Archivos Salma\2024\Materias ciclo 7\ANALISIS DE SISTEMAS\LABORATORIO\TAREA\ADSProject\ADSProject\obj\Debug\net8.0\ADSProject.sourcelink.json
+C:\Users\verri\Documents\Archivos Salma\2024\Materias ciclo 7\ANALISIS DE SISTEMAS\LABORATORIO\TAREA\ADSProject\ADSProject\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\verri\Documents\Archivos Salma\2024\Materias ciclo 7\ANALISIS DE SISTEMAS\LABORATORIO\TAREA\ADSProject\ADSProject\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\verri\Documents\Archivos Salma\2024\Materias ciclo 7\ANALISIS DE SISTEMAS\LABORATORIO\TAREA\ADSProject\ADSProject\obj\Debug\net8.0\staticwebassets\msbuild.ADSProject.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\verri\Documents\Archivos Salma\2024\Materias ciclo 7\ANALISIS DE SISTEMAS\LABORATORIO\TAREA\ADSProject\ADSProject\obj\Debug\net8.0\staticwebassets\msbuild.build.ADSProject.props
+C:\Users\verri\Documents\Archivos Salma\2024\Materias ciclo 7\ANALISIS DE SISTEMAS\LABORATORIO\TAREA\ADSProject\ADSProject\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ADSProject.props
+C:\Users\verri\Documents\Archivos Salma\2024\Materias ciclo 7\ANALISIS DE SISTEMAS\LABORATORIO\TAREA\ADSProject\ADSProject\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ADSProject.props
+C:\Users\verri\Documents\Archivos Salma\2024\Materias ciclo 7\ANALISIS DE SISTEMAS\LABORATORIO\TAREA\ADSProject\ADSProject\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\verri\Documents\Archivos Salma\2024\Materias ciclo 7\ANALISIS DE SISTEMAS\LABORATORIO\TAREA\ADSProject\ADSProject\obj\Debug\net8.0\scopedcss\bundle\ADSProject.styles.css
+C:\Users\verri\Documents\Archivos Salma\2024\Materias ciclo 7\ANALISIS DE SISTEMAS\LABORATORIO\TAREA\ADSProject\ADSProject\obj\Debug\net8.0\ADSProject.csproj.CopyComplete
+C:\Users\verri\Documents\Archivos Salma\2024\Materias ciclo 7\ANALISIS DE SISTEMAS\LABORATORIO\TAREA\ADSProject\ADSProject\obj\Debug\net8.0\ADSProject.dll
+C:\Users\verri\Documents\Archivos Salma\2024\Materias ciclo 7\ANALISIS DE SISTEMAS\LABORATORIO\TAREA\ADSProject\ADSProject\obj\Debug\net8.0\refint\ADSProject.dll
+C:\Users\verri\Documents\Archivos Salma\2024\Materias ciclo 7\ANALISIS DE SISTEMAS\LABORATORIO\TAREA\ADSProject\ADSProject\obj\Debug\net8.0\ADSProject.pdb
+C:\Users\verri\Documents\Archivos Salma\2024\Materias ciclo 7\ANALISIS DE SISTEMAS\LABORATORIO\TAREA\ADSProject\ADSProject\obj\Debug\net8.0\ADSProject.genruntimeconfig.cache
+C:\Users\verri\Documents\Archivos Salma\2024\Materias ciclo 7\ANALISIS DE SISTEMAS\LABORATORIO\TAREA\ADSProject\ADSProject\obj\Debug\net8.0\ref\ADSProject.dll
