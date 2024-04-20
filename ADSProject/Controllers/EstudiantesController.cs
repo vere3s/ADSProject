@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ADSProject.Controllers
 {
+    [ApiController]
     [Route("api/estudiantes/")]
     public class EstudiantesController : ControllerBase
     {
@@ -20,14 +21,10 @@ namespace ADSProject.Controllers
             this.estudiante = estudiante;
         }
         [HttpPost("agregarEstudiante")]
-        public ActionResult<string> AgregarEstudiante([FromBody] Estudiante estudiante)
+        public ActionResult<string> AgregarEstudiante(Estudiante estudiante)
         {
             try
             {
-                if(!ModelState.IsValid)
-                {
-                    return BadRequest(ModelState);
-                }
                 int contador = this.estudiante.AgregarEstudiante(estudiante);
                 if (contador > 0)
                 {
@@ -49,14 +46,10 @@ namespace ADSProject.Controllers
             }
         }
         [HttpPut("actualizarEstudiante/{idEstudiante}")]
-        public ActionResult<string> ActualizarEstudiante(int idEstudiante, [FromBody] Estudiante estudiante)
+        public ActionResult<string> ActualizarEstudiante(int idEstudiante, Estudiante estudiante)
         {
             try
             {
-                if (!ModelState.IsValid)
-                {
-                    return BadRequest(ModelState);
-                }
                 int contador = this.estudiante.ActualizarEstudiante(idEstudiante, estudiante);
                 if (contador > 0)
                 {

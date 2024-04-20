@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ADSProject.Controllers
 {
+    [ApiController]
     [Route("api/carreras/")]
     public class CarrerasController : ControllerBase
     {
@@ -20,14 +21,10 @@ namespace ADSProject.Controllers
             this.carrera = carrera;
         }
         [HttpPost("agregarCarrera")]
-        public ActionResult<string> AgregarCarrera([FromBody] Carrera carrera)
+        public ActionResult<string> AgregarCarrera(Carrera carrera)
         {
             try
             {
-                if (!ModelState.IsValid)
-                {
-                    return BadRequest(ModelState);
-                }
                 int contador = this.carrera.AgregarCarrera(carrera);
                 if (contador > 0)
                 {
@@ -48,16 +45,12 @@ namespace ADSProject.Controllers
                 throw;
             }
         }
-        [HttpPut("actualizarCarrera/{id}")]
-        public ActionResult<string> ActualizarCarrera(int id, [FromBody] Carrera carrera)
+        [HttpPut("actualizarCarrera/{idCarrera}")]
+        public ActionResult<string> ActualizarCarrera(int idCarrera, Carrera carrera)
         {
             try
             {
-                if (!ModelState.IsValid)
-                {
-                    return BadRequest(ModelState);
-                }
-                int contador = this.carrera.ActualizarCarrera(id, carrera);
+                int contador = this.carrera.ActualizarCarrera(idCarrera, carrera);
                 if (contador > 0)
                 {
                     pCodRespuesta = COD_EXITO;
@@ -77,12 +70,12 @@ namespace ADSProject.Controllers
                 throw;
             }
         }
-        [HttpDelete("eliminarCarrera/{id}")]
-        public ActionResult<string> EliminarCarrera(int id)
+        [HttpDelete("eliminarCarrera/{idCarrera}")]
+        public ActionResult<string> EliminarCarrera(int idCarrera)
         {
             try
             {
-                bool eliminado = this.carrera.EliminarCarrera(id);
+                bool eliminado = this.carrera.EliminarCarrera(idCarrera);
                 if (eliminado)
                 {
                     pCodRespuesta = COD_EXITO;
@@ -102,12 +95,12 @@ namespace ADSProject.Controllers
                 throw;
             }
         }
-        [HttpGet("obtenerCarreraPorID/{id}")]
-        public ActionResult<string> ObtenerCarrera(int id)
+        [HttpGet("obtenerCarreraPorID/{idCarrera}")]
+        public ActionResult<string> ObtenerCarrera(int idCarrera)
         {
             try
             {
-                Carrera carrera = this.carrera.ObtenerCarreraPorID(id);
+                Carrera carrera = this.carrera.ObtenerCarreraPorID(idCarrera);
                 if (carrera != null)
                 {
                     return Ok(carrera);

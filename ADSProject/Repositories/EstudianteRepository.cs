@@ -5,13 +5,13 @@ namespace ADSProject.Repositories
 {
 public class EstudianteRepository : IEstudiante
 {
-        private List<Estudiante> lstEstudiantes = new List<Estudiante>
-   {
-       new Estudiante{ IdEstudiante = 1, NombresEstudiante = "JUAN CARLOS",
-       ApellidosEstudiante = "PEREZ SOSA", CodigoEstudiante = "PS24I04002",
-       CorreoEstudiante = "PS24I04002@usonsonate.edu.sv"
-       }
-   };
+    private List<Estudiante> lstEstudiantes = new List<Estudiante>
+    {
+           new Estudiante{ IdEstudiante = 1, NombresEstudiante = "JUAN CARLOS",
+           ApellidosEstudiante = "PEREZ SOSA", CodigoEstudiante = "PS24-I04-002",
+           CorreoEstudiante = "PS24I04002@usonsonate.edu.sv"
+           }
+     };
     public int ActualizarEstudiante(int idEstudiante, Estudiante estudiante)
     {
             try

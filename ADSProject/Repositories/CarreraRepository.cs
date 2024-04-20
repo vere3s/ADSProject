@@ -9,16 +9,16 @@ namespace ADSProject.Repositories
        {
            new Carrera
            { 
-               Id = 1, Codigo = "I04-2-14", Nombre = "ANALISIS DE SISTEMAS"
+               IdCarrera = 1, CodigoCarrera = "I04", NombreCarrera = "INGENIERIA EN SISTEMAS"
            }
        };
-        public int ActualizarCarrera(int id, Carrera carrera)
+        public int ActualizarCarrera(int idCarrera, Carrera carrera)
         {
             try
             {
-                int indice = lstCarreras.FindIndex(tmp => tmp.Id == id);
+                int indice = lstCarreras.FindIndex(tmp => tmp.IdCarrera == idCarrera);
                 lstCarreras[indice] = carrera;
-                return id;
+                return idCarrera;
             }
             catch (Exception)
             {
@@ -32,10 +32,10 @@ namespace ADSProject.Repositories
             {
                 if (lstCarreras.Count > 0)
                 {
-                    carrera.Id = lstCarreras.Last().Id + 1;
+                    carrera.IdCarrera = lstCarreras.Last().IdCarrera + 1;
                 }
                 lstCarreras.Add(carrera);
-                return carrera.Id;
+                return carrera.IdCarrera;
             }
             catch (Exception)
             {
@@ -43,11 +43,11 @@ namespace ADSProject.Repositories
             }
         }
 
-        public bool EliminarCarrera(int id)
+        public bool EliminarCarrera(int idCarrera)
         {
             try
             {
-                int indice = lstCarreras.FindIndex(tmp => tmp.Id == id);
+                int indice = lstCarreras.FindIndex(tmp => tmp.IdCarrera == idCarrera);
                 lstCarreras.RemoveAt(indice);
                 return true;
             }
@@ -57,11 +57,11 @@ namespace ADSProject.Repositories
             }
         }
 
-        public Carrera ObtenerCarreraPorID(int id)
+        public Carrera ObtenerCarreraPorID(int idCarrera)
         {
             try
             {
-                Carrera carrera = lstCarreras.FirstOrDefault(tmp => tmp.Id == id);
+                Carrera carrera = lstCarreras.FirstOrDefault(tmp => tmp.IdCarrera == idCarrera);
                 return carrera;
             }
             catch (Exception)
