@@ -14,7 +14,7 @@ namespace ADSProject.Models
         [MaxLength(length: 50, ErrorMessage = "La longitud del campo no puede ser mayor a 50 caracteres.")]
         public string ApellidosEstudiante { get; set; }
         [Required(ErrorMessage = "Este es un campo requerido")]
-        [MinLength(length: 12, ErrorMessage = "La longitud del campo no puede ser mayor a 12 caracteres.")]
+        [MinLength(length: 12, ErrorMessage = "La longitud del campo no puede ser menor a 12 caracteres.")]
         [MaxLength(length: 50, ErrorMessage = "La longitud del campo no puede ser mayor a 50 caracteres.")]
         public string CodigoEstudiante { get; set; }
         [Required(ErrorMessage = "Este es un campo requerido")]

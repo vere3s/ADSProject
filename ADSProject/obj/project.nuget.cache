@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jMk9AhiYxjO3EqU87iHC/xnzpiUXejIpcdS75rgUexe4hkVOwZ+3onLsbvEKCgmfnj9oFxGD427LV3Y1DYsQAg==",
+  "dgSpecHash": "fJn9KrXH1xISdHIZUtazlm3p3y9zLx02leVgD87RxSjUjxJ0+ILNg7cq9egUetnH55hUTbW+L2mqpLFn4Y0B7g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\verri\\Documents\\Archivos Salma\\2024\\Materias ciclo 7\\ANALISIS DE SISTEMAS\\LABORATORIO\\TAREA\\ADSProject\\ADSProject\\ADSProject.csproj",
+  "projectFilePath": "C:\\Users\\verri\\source\\repos\\ADSProject\\ADSProject\\ADSProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\verri\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\verri\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

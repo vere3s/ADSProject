@@ -17,11 +17,20 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 //Configurando inyeccion de dependencias
-builder.Services.AddSingleton<IEstudiante, EstudianteRepository>();
-builder.Services.AddSingleton<ICarrera, CarreraRepository>();
-builder.Services.AddSingleton<IProfesor, ProfesorRepository>();
-builder.Services.AddSingleton<IMateria, MateriaRepository>();
-builder.Services.AddSingleton<IGrupo, GrupoRepository>();
+builder.Services.AddScoped<IEstudiante, EstudianteRepository>();
+builder.Services.AddScoped<ICarrera, CarreraRepository>();
+builder.Services.AddScoped<IProfesor, ProfesorRepository>();
+builder.Services.AddScoped<IMateria, MateriaRepository>();
+builder.Services.AddScoped<IGrupo, GrupoRepository>();
+
+//configurando CORS
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(configuration =>
+    {
+        configuration.WithOrigins(builder.Configuration["allowedOrigins"]!).AllowAnyMethod().AllowAnyHeader();
+    });
+});
 
 var app = builder.Build();
 
@@ -31,6 +40,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors();
 
 app.UseAuthorization();
 
