@@ -26,7 +26,15 @@ namespace ADSProject.Repositories
                 //int indice = lstMaterias.FindIndex(tmp => tmp.IdMateria == idMateria);
                 //lstMaterias[indice] = materia;
                 var item = applicationDbContext.Materias.SingleOrDefault(x => x.IdMateria == idMateria);
-                applicationDbContext.Entry(item).CurrentValues.SetValues(materia);
+
+                if (item == null)
+                {
+                    throw new InvalidOperationException($"La materia con Id {idMateria} no existe.");
+                }
+
+                // Actualiza solo las propiedades que pueden ser modificadas.
+                item.NombreMateria = materia.NombreMateria;
+
                 applicationDbContext.SaveChanges();
                 return idMateria;
             }

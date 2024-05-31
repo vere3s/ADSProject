@@ -27,7 +27,19 @@ namespace ADSProject.Repositories
                 //int indice = lstGrupos.FindIndex(tmp => tmp.IdGrupo == idGrupo);
                 //lstGrupos[indice] = grupo;
                 var item = applicationDbContext.Grupos.SingleOrDefault(x => x.IdGrupo == idGrupo);
-                applicationDbContext.Entry(item).CurrentValues.SetValues(grupo);
+
+                if (item == null)
+                {
+                    throw new InvalidOperationException($"El grupo con Id {idGrupo} no existe.");
+                }
+
+                // Actualiza solo las propiedades que pueden ser modificadas.
+                item.IdCarrera = grupo.IdCarrera;
+                item.IdMateria = grupo.IdMateria;
+                item.IdProfesor = grupo.IdProfesor;
+                item.Ciclo = grupo.Ciclo;
+                item.Anio = grupo.Anio;
+
                 applicationDbContext.SaveChanges();
                 return idGrupo;
             }

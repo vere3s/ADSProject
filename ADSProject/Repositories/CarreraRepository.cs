@@ -26,7 +26,16 @@ namespace ADSProject.Repositories
                 //int indice = lstCarreras.FindIndex(tmp => tmp.IdCarrera == idCarrera);
                 //lstCarreras[indice] = carrera;
                 var item = applicationDbContext.Carreras.SingleOrDefault(x => x.IdCarrera == idCarrera);
-                applicationDbContext.Entry(item).CurrentValues.SetValues(carrera);
+
+                if (item == null)
+                {
+                    throw new InvalidOperationException($"La carrera con Id {idCarrera} no existe.");
+                }
+
+                // Actualiza solo las propiedades que pueden ser modificadas.
+                item.CodigoCarrera = carrera.CodigoCarrera;
+                item.NombreCarrera = carrera.NombreCarrera;
+
                 applicationDbContext.SaveChanges();
                 return idCarrera;
             }

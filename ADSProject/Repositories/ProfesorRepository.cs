@@ -27,7 +27,17 @@ namespace ADSProject.Repositories
                 //int indice = lstProfesores.FindIndex(tmp => tmp.IdProfesor == idProfesor);
                 //lstProfesores[indice] = profesor;
                 var item = applicationDbContext.Profesores.SingleOrDefault(x => x.IdProfesor == idProfesor);
-                applicationDbContext.Entry(item).CurrentValues.SetValues(profesor);
+
+                if (item == null)
+                {
+                    throw new InvalidOperationException($"El profesor con Id {idProfesor} no existe.");
+                }
+
+                // Actualiza solo las propiedades que pueden ser modificadas.
+                item.NombresProfesor = profesor.NombresProfesor;
+                item.ApellidosProfesor = profesor.ApellidosProfesor;
+                item.Email = profesor.Email;
+
                 applicationDbContext.SaveChanges();
                 return idProfesor;
             }
